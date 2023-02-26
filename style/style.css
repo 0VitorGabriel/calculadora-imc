@@ -1,1 +1,28 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+caption, th, td {
+    text-transform: uppercase;
+    border-bottom: 1px solid #dee2e7;
+    text-align: left;
+}
+
+td {
+    padding-right: 50px;
+    opacity: 0.8;
+}
+
+td.numero {
+    text-align: center;
+}
+
+div#result {
+
+}

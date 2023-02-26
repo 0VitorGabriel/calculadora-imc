@@ -7,7 +7,7 @@ let resultado_imc = document.querySelector('div#result')
 // dados da tabela
 
 let abaixo_peso = document.querySelector('tr#magro')
-let peso_normal = document.querySelector('tr#nomal')
+let peso_normal = document.querySelector('tr#normal')
 let sobre_peso = document.querySelector('tr#sobrepeso')
 let obesidade = document.querySelector('tr#obesidade')
 let obesiade_morbida = document.querySelector('tr#obesidade_morbida')
@@ -24,7 +24,15 @@ function verificador() {
 function situacao(indice) {
     if (indice < 18.5) {
         abaixo_peso.style.background = '#01e2e269'
-    } else if (indice >= 18.5 && indice)
+    } else if (indice >= 18.5 && indice < 25.0) {
+        peso_normal.style.background = '#01e2e269'
+    } else if (indice >= 25.0 && indice < 30.0) {
+        sobre_peso.style.background = '#01e2e269'
+    } else if (indice >= 30.0 && indice < 40) {
+        obesidade.style.background = '#01e2e269'
+    } else {
+        obesiade_morbida.style.background = '#01e2e269'
+    }
 }
 
 function calculo() {

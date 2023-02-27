@@ -23,6 +23,6 @@ td.numero {
     text-align: center;
 }
 
-div#result {
-
+.teste {
+    background-color: #01e2e269;
 }

@@ -27,11 +27,11 @@
         <h5>Peso(ex: 40kg)</h5>
 
         <input type="number" name="kg" id="peso" placeholder="Quilos">
-        <input type="button" value="Limpar" onclick="limpar()">
-        <input type="button" value="Calcular" onclick="calculo()">
+        <input type="button" value="Limpar" onclick="limpar_dados()">
+        <input type="button" value="Calcular" onclick="calculo_imc()">
     </form>
 
-    <h2>SEU IMC: <div id="result"></div></h2>
+    <h2>SEU IMC: <span></span></h2>
 
     <table>
         <caption>
@@ -43,6 +43,8 @@
                 <th>Classificaçao</th>
                 <th>Obesidade(grau)</th>
             </tr>
+        </thead>
+        <tbody>
             <tr id="magro">
                 <td>Menor que 18.5</td>
                 <td>Magreza</td>
@@ -68,9 +70,6 @@
                 <td>Obesidade Grave</td>
                 <td class="numero">III</td>
             </tr>
-        </thead>
-        <tbody>
-
         </tbody>
     </table>
     

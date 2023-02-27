@@ -23,15 +23,15 @@ function verificar_dados() {
 
 function cor_situacao(indice) {
     if (indice < 18.5) {
-        abaixo_peso.classList.add('teste')
+        abaixo_peso.classList.add('situacao')
     } else if (indice >= 18.5 && indice < 25.0) {
-        peso_normal.classList.add('teste')
+        peso_normal.classList.add('situacao')
     } else if (indice >= 25.0 && indice < 30.0) {
-        sobre_peso.classList.add('teste')
+        sobre_peso.classList.add('situacao')
     } else if (indice >= 30.0 && indice < 40) {
-        obesidade.classList.add('teste')
+        obesidade.classList.add('situacao')
     } else {
-        obesiade_morbida.classList.add('teste')
+        obesiade_morbida.classList.add('situacao')
     }
 }
 
@@ -53,10 +53,10 @@ function limpar_dados() {
 }
 
 function limpa_tabela() {
-    abaixo_peso.classList.remove('teste')
-    peso_normal.classList.remove('teste')
-    sobre_peso.classList.remove('teste')
-    obesidade.classList.remove('teste')
-    obesiade_morbida.classList.remove('teste')
+    abaixo_peso.classList.remove('situacao')
+    peso_normal.classList.remove('situacao')
+    sobre_peso.classList.remove('situacao')
+    obesidade.classList.remove('situacao')
+    obesiade_morbida.classList.remove('situacao')
 }
 

@@ -8,6 +8,10 @@ body, html {
     padding: 0px;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 caption, th, td {
     text-transform: uppercase;
     border-bottom: 1px solid #dee2e7;
@@ -23,6 +27,6 @@ td.numero {
     text-align: center;
 }
 
-.teste {
+.situacao {
     background-color: #01e2e269;
 }

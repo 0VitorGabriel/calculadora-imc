@@ -12,8 +12,8 @@ h2, h3, h5 {
     color: #1F5EAF;
 }
 
-h3 {
-    
+caption {
+    font-weight: 800;
 }
 
 h5 {
@@ -70,8 +70,13 @@ p {
 
 table {
     border-collapse: collapse;
-    width: 200px;
-    font-size: small;
+    width: 600px;
+    font-size: smaller;
+    margin: 10px 0px 10px 0px;
+}
+
+div#container {
+    overflow-x: scroll;
 }
 
 caption, th, td {
@@ -89,14 +94,17 @@ caption {
 
 th {
     color: #1F5EAF;
+    padding: 5px;
 }
 
 td {
     padding-right: 50px;
     opacity: 0.8;
+    font-size: smaller;
+    padding: 5px;
 }
 
-td.numero {
+.numero {
     text-align: center;
 }
 

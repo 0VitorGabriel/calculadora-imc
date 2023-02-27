@@ -5,17 +5,90 @@
 body, html {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
-    padding: 0px;
+    padding-left: 10px;
+}
+
+h2, h3, h5 {
+    color: #1F5EAF;
+}
+
+h3 {
+    
+}
+
+h5 {
+    margin-bottom: 2px;
+}
+
+p {
+    opacity: 0.8;
+}
+
+.dados1 {
+    border: 1px solid #1F5EAF;
+    border-radius: 10px;
+    width: 120px;
+    padding: 8px 10px;
+}
+
+.dados2 {
+    border: 1px solid #1F5EAF;
+    border-radius: 10px;
+    width: 120px;
+    padding: 8px 10px;
+}
+
+.botao1 {
+    background-color: #1f5eaf;
+    color: #ffffff;
+    border-color: transparent;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    margin: 3px;
+}
+
+.botao1:hover {
+    background-color: #153d72;
+    transition: 0.2s;
+}
+
+.botao2 {
+    background-color: #ff5202;
+    color: #ffffff;
+    border-color: transparent;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    margin: 3px;
+}
+
+.botao2:hover {
+    background-color: #c94102;
+    transition: 0.2s;
 }
 
 table {
     border-collapse: collapse;
+    width: 200px;
+    font-size: small;
 }
 
 caption, th, td {
     text-transform: uppercase;
     border-bottom: 1px solid #dee2e7;
     text-align: left;
+}
+
+caption {
+    background-color: #1F5EAF;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+th {
+    color: #1F5EAF;
 }
 
 td {
@@ -28,5 +101,13 @@ td.numero {
 }
 
 .situacao {
-    background-color: #01e2e269;
+    background-color: #42f1f157;
+}
+
+h2 {
+    display: inline-block;
+    background-color: #ff5202;
+    color: #ffffff;
+    padding: 13px;
+    border-radius: 23px;
 }

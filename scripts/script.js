@@ -34,7 +34,7 @@ function limpa_tabela() {
 function calculo_imc() {
     if (verificar_dados()) {
         alert('Preencha todos os dados antes de calcular o IMC')
-        limpa_tabela()
+        limpar_dados()
     } else {
         let imc = (Number(peso.value)) / (Number(altura.value) ** 2)
         resultado_imc.innerHTML = ` ${imc.toFixed(2)} `

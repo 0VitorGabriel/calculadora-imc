@@ -12,9 +12,14 @@ h2, h3, h5 {
     color: #1F5EAF;
 }
 
-caption {
-    font-weight: 800;
+h2 {
+    display: inline-block;
+    background-color: #ff5202;
+    color: #ffffff;
+    padding: 13px;
+    border-radius: 23px;
 }
+
 
 h5 {
     margin-bottom: 2px;
@@ -24,22 +29,18 @@ p {
     opacity: 0.8;
 }
 
-.dados1 {
+caption {
+    font-weight: 800;
+}
+
+.dados {
     border: 1px solid #1F5EAF;
     border-radius: 10px;
     width: 120px;
     padding: 8px 10px;
 }
 
-.dados2 {
-    border: 1px solid #1F5EAF;
-    border-radius: 10px;
-    width: 120px;
-    padding: 8px 10px;
-}
-
-.botao1 {
-    background-color: #1f5eaf;
+.botao {
     color: #ffffff;
     border-color: transparent;
     padding: 10px;
@@ -48,22 +49,20 @@ p {
     margin: 3px;
 }
 
-.botao1:hover {
+#botao1 {
+    background-color: #1F5EAF;
+}
+
+#botao1:hover {
     background-color: #153d72;
     transition: 0.2s;
 }
 
-.botao2 {
+#botao2 {
     background-color: #ff5202;
-    color: #ffffff;
-    border-color: transparent;
-    padding: 10px;
-    width: 100px;
-    border-radius: 20px;
-    margin: 3px;
 }
 
-.botao2:hover {
+#botao2:hover {
     background-color: #c94102;
     transition: 0.2s;
 }
@@ -73,16 +72,14 @@ table {
     width: 600px;
     font-size: smaller;
     margin: 10px 0px 10px 0px;
+
+    text-transform: uppercase;
+    border-bottom: 1px solid #dee2e7;
+    text-align: left;
 }
 
 div#container {
     overflow-x: scroll;
-}
-
-caption, th, td {
-    text-transform: uppercase;
-    border-bottom: 1px solid #dee2e7;
-    text-align: left;
 }
 
 caption {
@@ -90,6 +87,7 @@ caption {
     color: #ffffff;
     padding: 10px;
     border-radius: 10px;
+    text-align: left;
 }
 
 th {
@@ -110,12 +108,4 @@ td {
 
 .situacao {
     background-color: #42f1f157;
-}
-
-h2 {
-    display: inline-block;
-    background-color: #ff5202;
-    color: #ffffff;
-    padding: 13px;
-    border-radius: 23px;
 }

@@ -21,6 +21,28 @@ function verificar_dados() {
     }
 }
 
+
+function limpa_tabela() {
+    abaixo_peso.classList.remove('situacao')
+    peso_normal.classList.remove('situacao')
+    sobre_peso.classList.remove('situacao')
+    obesidade.classList.remove('situacao')
+    obesiade_morbida.classList.remove('situacao')
+}
+
+
+function calculo_imc() {
+    if (verificar_dados()) {
+        alert('Preencha todos os dados antes de calcular o IMC')
+        limpa_tabela()
+    } else {
+        let imc = (Number(peso.value)) / (Number(altura.value) ** 2)
+        resultado_imc.innerHTML = ` ${imc.toFixed(2)} `
+        cor_situacao(imc)
+    }
+}
+
+
 function cor_situacao(indice) {
     limpa_tabela()
     if (indice < 18.5) {
@@ -36,16 +58,6 @@ function cor_situacao(indice) {
     }
 }
 
-function calculo_imc() {
-    if (verificar_dados()) {
-        alert('Preencha todos os dados antes de calcular o IMC')
-        limpa_tabela()
-    } else {
-        let imc = (Number(peso.value)) / (Number(altura.value) ** 2)
-        resultado_imc.innerHTML = ` ${imc.toFixed(2)} `
-        cor_situacao(imc)
-    }
-}
 
 function limpar_dados() {
     altura.value = ''
@@ -54,11 +66,5 @@ function limpar_dados() {
     limpa_tabela()
 }
 
-function limpa_tabela() {
-    abaixo_peso.classList.remove('situacao')
-    peso_normal.classList.remove('situacao')
-    sobre_peso.classList.remove('situacao')
-    obesidade.classList.remove('situacao')
-    obesiade_morbida.classList.remove('situacao')
-}
+
 

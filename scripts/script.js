@@ -22,6 +22,7 @@ function verificar_dados() {
 }
 
 function cor_situacao(indice) {
+    limpa_tabela()
     if (indice < 18.5) {
         abaixo_peso.classList.add('situacao')
     } else if (indice >= 18.5 && indice < 25.0) {

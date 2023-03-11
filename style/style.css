@@ -49,20 +49,20 @@ caption {
     margin: 3px;
 }
 
-#botao1 {
+#cor_submit {
     background-color: #1F5EAF;
 }
 
-#botao1:hover {
+#cor_submit:hover {
     background-color: #153d72;
     transition: 0.2s;
 }
 
-#botao2 {
+#cor_reset {
     background-color: #ff5202;
 }
 
-#botao2:hover {
+#cor_reset:hover {
     background-color: #c94102;
     transition: 0.2s;
 }

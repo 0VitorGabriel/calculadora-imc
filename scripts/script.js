@@ -12,21 +12,26 @@ let sobre_peso = document.querySelector('tr#sobrepeso')
 let obesidade = document.querySelector('tr#obesidade')
 let obesiade_morbida = document.querySelector('tr#obesidade_morbida')
 
-function calculo_imc() {
+// botao de calculo 
+
+let botao_calcular_imc = document.querySelector('input.botao')
+
+
+botao_calcular_imc.addEventListener('click', function () {
     let imc = (Number(peso.value)) / (Number(altura.value) ** 2)
     resultado_imc.innerHTML = ` ${imc.toFixed(2)} `
     cor_situacao(imc)
-}
+}) 
 
-function cor_situacao(indice) {
+function cor_situacao(resultado) {
     limpa_tabela()
-    if (indice < 18.5) {
+    if (resultado < 18.5) {
         abaixo_peso.classList.add('situacao')
-    } else if (indice >= 18.5 && indice < 25.0) {
+    } else if (resultado >= 18.5 && resultado < 25.0) {
         peso_normal.classList.add('situacao')
-    } else if (indice >= 25.0 && indice < 30.0) {
+    } else if (resultado >= 25.0 && resultado < 30.0) {
         sobre_peso.classList.add('situacao')
-    } else if (indice >= 30.0 && indice < 40) {
+    } else if (resultado >= 30.0 && resultado < 40) {
         obesidade.classList.add('situacao')
     } else {
         obesiade_morbida.classList.add('situacao')

@@ -33,7 +33,7 @@ function cor_situacao(resultado) {
         sobre_peso.classList.add('situacao')
     } else if (resultado >= 30.0 && resultado < 40) {
         obesidade.classList.add('situacao')
-    } else {
+    } else if (resultado >= 40.0) {
         obesiade_morbida.classList.add('situacao')
     }
 }

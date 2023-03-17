@@ -17,7 +17,7 @@ let obesiade_morbida = document.querySelector('tr#obesidade_morbida')
 let botao_calcular_imc = document.querySelector('input.botao')
 
 function verificar_nan() {
-    if (altura == NaN || peso == NaN) {
+    if (altura.value.length == 0 || peso.value.length == 0) {
         return true
     } else {
         return false
@@ -25,7 +25,7 @@ function verificar_nan() {
 }
 
 botao_calcular_imc.addEventListener('click', function () {
-    if (verificar_nan()) {
+    if (!verificar_nan()) {
         let imc = (Number(peso.value)) / (Number(altura.value) ** 2)
         resultado_imc.innerHTML = ` ${imc.toFixed(2)} `
         cor_situacao(imc)

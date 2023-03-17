@@ -16,11 +16,20 @@ let obesiade_morbida = document.querySelector('tr#obesidade_morbida')
 
 let botao_calcular_imc = document.querySelector('input.botao')
 
+function verificar_nan() {
+    if (altura == NaN || peso == NaN) {
+        return true
+    } else {
+        return false
+    }
+}
 
 botao_calcular_imc.addEventListener('click', function () {
-    let imc = (Number(peso.value)) / (Number(altura.value) ** 2)
-    resultado_imc.innerHTML = ` ${imc.toFixed(2)} `
-    cor_situacao(imc)
+    if (verificar_nan()) {
+        let imc = (Number(peso.value)) / (Number(altura.value) ** 2)
+        resultado_imc.innerHTML = ` ${imc.toFixed(2)} `
+        cor_situacao(imc)
+    }
 }) 
 
 function cor_situacao(resultado) {

@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+* {
+    text-align: center;
+}
+
 body, html {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
@@ -14,7 +18,10 @@ main {
     top: 10%;
     left: 50%;
     transform: translate(-50%, 10%);
+}
 
+#form {
+    text-align: left;
 }
 
 h2, h3, h5 {
@@ -32,6 +39,7 @@ h2 {
 
 h5 {
     margin-bottom: 2px;
+    text-align: left;
 }
 
 p {
